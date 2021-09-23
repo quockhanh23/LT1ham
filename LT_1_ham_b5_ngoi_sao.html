@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhập sao')
+    function timSao(sao1,sao2) {
+        let check = false
+        for (let i = 0; i < sao1.length;i++) {
+            if (a === sao1[i]) {
+                check = true
+                return sao2[i]
+            }
+        } if (check === false) {
+            return "No star"
+        }
+    }
+</script>
+</body>
+</html>
+<script>
+    let stars1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus']
+    let stars2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    let c = timSao(stars1,stars2)
+    document.write(c + '<br>')
+    let starts3 = ['oto','gag','bob','d','e','sa','zxx']
+    let starts4 = ['susu','goko','toto','vc','bn','gc','gkd']
+    let e = timSao(starts3,starts4)
+    document.write(e)
+</script>
